@@ -132,3 +132,32 @@ console.log(Math.ceil(Math.random() * 10))
 console.log(2 ** 3)// Elevado (2 elevado 3)
 console.log(Math.max(10, 20, 30)) // Te devuelve el maximo
 console.log(Math.min(10, 20, 30)) // Te devuelve el minimo
+
+console.log('-------------------------')
+
+// DATE
+
+console.log(new Date()) // Formato fecha
+console.log(Date.now()) // Formato en miliseconds
+
+// Year / Month/ Day / Hour / Minutes / Seconds / Miliseconds
+console.log(new Date(2024, 11, 31, 14, 30, 0, 0)) // Los meses empiezan a 0
+
+const fecha = new Date(2025, 0, 12)
+console.log(fecha.getDay()) // Devuelve el dia de la semana ( 0 es domingo)
+
+const fecha2 = Date.UTC(2024)
+console.log(fecha2)
+
+const fecha3 = new Date()
+console.log(fecha3.toDateString()) // El formato de fecha es mas en String
+console.log(fecha3.toLocaleString('en-ES')) // El formato de fecha en local o en-ES es decir España "13/1/2025"
+console.log(fecha3.toLocaleString('en-US')) // El formato de fecha en Ingles "13/1/2025"
+
+console.log('-------------------------')
+const fecha4 = new Date(2024, 0, 10, 14, 30, 0)
+const fecha5 = new Date(2024, 1, 10, 14, 30, 0)
+
+const diferencia = fecha5 - fecha4
+
+console.log(diferencia / (1000 * 60 * 60 * 24))
