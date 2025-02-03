@@ -34,18 +34,18 @@ console.log(arrayAbilities)
 // obtener los nombres de las versiones del juego y pasarlos al callback,
 // que debe imprimirlos en la consola como un array.
 // Assuming data.game_indices is an array of objects and each object has a 'name' property
-
 function getGameNames (callback) {
-  const GameNames = []
+  const gameNames = []
+
   data.game_indices.forEach(element => {
-    GameNames.push(element.version.name)
+    gameNames.push(element.version.name)
   })
 
-  callback(GameNames)
+  callback(gameNames)
 }
 
-function printGameNames (names) {
-  console.log(names)
+function printGameNames (gameNames) {
+  console.log(gameNames)
 }
 
 getGameNames(printGameNames)
@@ -55,8 +55,8 @@ getGameNames(printGameNames)
 // Enunciado: Crea una función flecha que reciba como parámetro
 // la altura de Snorlax (en decímetros) y la convierta a metros.
 // Muestra el resultado en la consola.
-const alturaMetros = x => x / 10
-console.log(alturaMetros(data.height))
+const alturaMetros = altura => altura / 10
+console.log(alturaMetros)
 
 // 4. Arrow Functions y Callbacks para determinar si Snorlax es "alto" (Revisar Tema 3.5 Pagina 8 y 11)
 
