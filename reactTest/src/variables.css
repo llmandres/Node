@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/*
+Aqui iran todas las variables para el CSS
+Colores
+Tipografia
+ - Fuente
+ - Peso
+Tamaños
+Espaciado
+*/
+:root{
+    /* Colores */
+    --color-primary : #252525;
+    --color-secundary: #FFFFFF;
+    --color-terciario: #3B3B3B;
+
+    --color-danger : #FF0000;
+    --color-submit: #30BE71;
+
+    /* Fuente Tipografica */
+
+    --font-primary: "Nunito", serif;
+
+    /* Peso Tipografico*/
+
+    --fw-bold : 800;
+    --fw-semibold : 600;
+    --fw-regular : 400;
+    --fw-light : 300;
+    --fw-thin : 200;
+
+    /* Tamaño */
+
+    --fs-xs: clamp(0.64rem, 0.04vi + 0.63rem, 0.67rem);
+    --fs-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.48vi + 1.15rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 0.79vi + 1.4rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.23vi + 1.7rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 1.88vi + 2.06rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 2.79vi + 2.48rem, 5rem);
+
+    /* Espaciado */
+    
+    --spacing-xxl : 4rem;
+    --spacing-xl : 2rem;
+    --spacing-lg : 1.5rem; 
+    --spacing-md : 1rem;
+    --spacing-sm : 0.75rem;
+    --spacing-xs : 0.5rem;
+    --spacing-xxs : 0.25rem;
+    
+
+
+
+  
+}
