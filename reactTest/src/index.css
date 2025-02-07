@@ -1,5 +1,11 @@
+/* Es mejor importar aqui las variables CSS*/
+@import url('./variables.css'); 
 *{
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+}
+body{
+  background-color: var(--color-primary);
+  font-family: var(--font-primary);
 }

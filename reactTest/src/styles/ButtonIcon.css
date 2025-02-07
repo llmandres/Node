@@ -1,0 +1,15 @@
+/*A pesar de que el css del icon se use en APP.jsx se sigue podiendo realizar el css aqui */
+.buttonIcon{
+    background-color: var(--color-terciario);
+    border: none;
+    padding:1em;
+    border-radius: 16px;
+    color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonIcon svg{
+    width: var(--fs-base);
+    height: var(--fs-base);
+}

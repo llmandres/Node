@@ -1,0 +1,17 @@
+.noteItem{
+    background-color: #ed2139;
+    padding: 1em .5em;
+    border-radius: 16px;
+    word-wrap: break-word;
+}
+.noteItem_title{
+    color: var(--color-secundary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-semibold);
+}
+.noteItem_desc{
+    color: var(--color-secundary);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-thin);
+
+}
