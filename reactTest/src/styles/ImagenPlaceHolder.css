@@ -1,0 +1,25 @@
+.imageplaceholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50dvw;
+    height: 50dvh;
+
+    /*Centrar la imagen y texto en el medio*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+.imageplaceholder__image{
+    height: 100%;
+    width: 100%;
+
+}
+.imageplaceholder__text{
+    color: var(--color-secundary);
+    font-weight: var(--fw-light);
+    font-size: var(--fs-base);
+    text-align: center;
+}

@@ -2,8 +2,11 @@ import  React  from 'react'
 import  ButtonIcon  from '../components/ButtonIcon.jsx'
 import  Header  from '../components/Header.jsx'
 import NoteItem from '../components/NoteItem.jsx';
+
+import ImagePlaceHolder from '../components/ImagenPlaceHolder.jsx';
 import { FaSearch } from "react-icons/fa"; 
 import { IoInformationCircleOutline } from "react-icons/io5";
+import { IoIosAdd } from 'react-icons/io';
 /*Las cosas se importan donde se vayan a utilizar */ 
 
 
@@ -15,8 +18,13 @@ function Note() {
         {"id":"7875ba39-a73f-4751-926d-8871547848c3","titulo":"Kung Fu Panda: Secrets of the Furious Five","descripcion":"eviawpkxywtpgdwgatwwaqobwtydqtsckomqyfefipjizjpxgvpxzsbp","color":"#1091dd"},
         {"id":"09acb98e-f954-4162-89e8-675440925a90","titulo":"Elia Kazan: A Director's Journey","descripcion":"dudwfubtrgdfadsadzfjmzxdgqwwjdkckrhagyeoirxadeoqbmjqxzcp","color":"#da574d"},
         {"id":"489a4139-47fe-41cb-9b0a-540beb57cc3d","titulo":"Rosewood","descripcion":"hxgkwckvktahxwlaoinrrxxpssogjbohbjnfnsvtsbwtctfvzhdyyyrz","color":"#ae4542"},
+        {"id":"620bdc1b-489f-4659-84c7-d209ebaa6724","titulo":"The Damned","descripcion":"qjergatkhmeyrlgjjejumbukmmixarjxtytmqztepgxuvslotlbcsurw","color":"#520846"},
+        {"id":"620bdc1b-489f-4659-84c7-d209ebaa6724","titulo":"The Damned","descripcion":"qjergatkhmeyrlgjjejumbukmmixarjxtytmqztepgxuvslotlbcsurw","color":"#520846"},
         {"id":"620bdc1b-489f-4659-84c7-d209ebaa6724","titulo":"The Damned","descripcion":"qjergatkhmeyrlgjjejumbukmmixarjxtytmqztepgxuvslotlbcsurw","color":"#520846"}]
     /* */
+
+
+     /*  Si hay algo en el array que son las notas, imprimira las notas, si no, imprimira ImagenPlaceHolder*/
     return(
         <>
         <Header>
@@ -26,11 +34,18 @@ function Note() {
                 <ButtonIcon icon={<FaSearch/>}/>
                 </div>
         </Header>
+
         <div className='note_container'>
-        {data.map(elem => <NoteItem key={elem.key} title={elem.titulo} description={elem.descripcion} color={elem.color}/>)}
+           
+            {data.length !== 0 ? 
+            data.map(elem => <NoteItem key={elem.key} title={elem.titulo} description={elem.descripcion} color={elem.color}/>)
+        : <ImagePlaceHolder Image='..\src\assets\react.svg' text='Crea una nueva'/>}
 
-
+            
         </div>
+        <button className='note__add'>
+            <IoIosAdd />
+        </button>
 
         
     </>

@@ -9,7 +9,29 @@
 }
 .note_container{
     margin-top: var(--spacing-md);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     flex-direction: column;
     gap: var(--spacing-md);
+}
+
+.note__add{
+    position: fixed;
+    bottom: var(--spacing-xl);
+    right: var(--spacing-md);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 100%;
+    padding: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 4px;
+}
+.note__add svg{ /* Esto va a buscar los SVG dentro del note_add y lo va a estilar*/
+    color: var(--color-secundary);
+    height: var(--fs-xxl) ;
+    width: var(--fs-xxl
+    ) ; 
+
 }
