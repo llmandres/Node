@@ -1,0 +1,57 @@
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 1px solid red;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 80%;
+    min-width: 12.5rem;
+    max-width: 20rem;
+    border-radius: 16px;
+}
+.modal__text{
+    color:var(--color-secundary);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-thin);
+
+}
+.modal__icon{
+    color: var(--color-accent);
+    width: var(--fs-lg);
+    height: var(--fs-lg);
+}
+
+.modal__button{
+    border: 0;
+    color: var(--color-secundary);
+    font-weight: var(--fw-thin);
+    font-size: var(--fs-base);
+    padding: .5em 1.5em;
+    border-radius: 4px;
+    flex: 1;
+
+
+}
+.modal__buttonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+.modal__button--danger{
+    background-color: var(--color-danger);
+
+}
+
+.modal__button--success{
+
+    background-color: var(--color-submit);
+
+}
