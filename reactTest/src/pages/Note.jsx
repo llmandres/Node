@@ -2,6 +2,7 @@ import  React  from 'react'
 import  ButtonIcon  from '../components/ButtonIcon.jsx'
 import  Header  from '../components/Header.jsx'
 import NoteItem from '../components/NoteItem.jsx';
+import { Link } from 'react-router-dom';
 
 import ImagePlaceHolder from '../components/ImagenPlaceHolder.jsx';
 import { FaSearch } from "react-icons/fa"; 
@@ -43,9 +44,9 @@ function Note() {
 
             
         </div>
-        <button className='note__add'>
+        <Link to={"/edit"} className='note__add'>
             <IoIosAdd />
-        </button>
+        </Link>
 
         
     </>

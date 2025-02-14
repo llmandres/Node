@@ -19,6 +19,7 @@
     color:var(--color-secundary);
     font-size: var(--fs-base);
     font-weight: var(--fw-thin);
+    text-align: center;
 
 }
 .modal__icon{

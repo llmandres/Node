@@ -1,0 +1,37 @@
+.editNote__groupIcon{
+    display: flex;
+    gap: var(--spacing-md);
+}
+.editNote__inputTitle{
+
+}
+
+.editNote__inputDescription{
+
+}
+.editNote__inputWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-xl);
+    gap: var(--spacing-md);
+}
+.editNote__input{
+    font-family: var(--font-primary);
+    background-color: transparent;
+    color: var(--color-secundary);
+    border: none;
+    resize: none;
+    
+}
+.editNote__input:focus{
+    outline: 0;
+    
+}
+
+.editNote__input--title{
+    font-size: var(--fs-lg);
+}
+.editNote__input--description{
+    font-size: var(--fs-sm);
+}
+

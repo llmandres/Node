@@ -7,7 +7,7 @@ export default function ButtonIcon(props) {
     /* REACT ICONS WEB*/
     /*Al componente ButtonIcon le pasamos una propiedas, haciendo que llame a su hijo , puesto en el App.jsx*/
     return(
-        <button className='buttonIcon'>
+        <button onClick={props.onSmash} className='buttonIcon'>
             {props.icon}
         </button>   
     )
