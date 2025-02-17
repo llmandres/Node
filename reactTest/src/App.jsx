@@ -1,4 +1,4 @@
-import  React  from 'react'
+import  React, { useState }  from 'react'
 import Note from './pages/Note'
 import ImagePlaceHolder from './components/ImagenPlaceHolder'
 import Modal from './components/Modal'
@@ -10,13 +10,15 @@ import './App.css'
 import EditNote from './pages/EditNote'
 
 function App() {
+
+    const [notes, setNotes] = useState([])
     /* */
     return(
         <div className='app'>
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Note></Note>}/>
-                <Route path='/edit' element={<EditNote></EditNote>}/>
+                <Route path='/' element={<Note notes = {notes}></Note>}/>
+                <Route path='/edit' element={<EditNote notes={notes} setNotes={setNotes}></EditNote>}/>
 n            </Routes>
         </BrowserRouter>
         </div>
