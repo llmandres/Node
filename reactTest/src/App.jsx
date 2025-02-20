@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import './App.css'
 import EditNote from './pages/EditNote'
+import Counter from './components/Counter'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
         <div className='app'>
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Note notes = {notes}></Note>}/>
+                <Route path='/' element={<Counter notes = {notes}></Counter>}/>
                 <Route path='/edit' element={<EditNote notes={notes} setNotes={setNotes}></EditNote>}/>
 n            </Routes>
         </BrowserRouter>

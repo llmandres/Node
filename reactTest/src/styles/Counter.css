@@ -1,0 +1,17 @@
+button{
+    border-radius: 16px;
+    transform: scale(1.1);
+    font-family: var(--font-primary);
+    padding: 1em;
+    color: white;
+    margin: .5em;
+    background-color: lightblue;
+}
+.counter__title{
+    color: white;
+}
+.counter__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
