@@ -20,7 +20,7 @@ function App() {
         { <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Note notes = {notes}></Note>}/>
-                <Route path='/edit' element={<EditNote notes={notes} setNotes={setNotes}></EditNote>}/>
+                <Route path='/edit/:id?' element={<EditNote notes={notes} setNotes={setNotes}></EditNote>}/>
 n            </Routes>
         </BrowserRouter> }
         </div>
